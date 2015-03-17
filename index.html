@@ -510,6 +510,25 @@ img {
 end
 ==============================================
 */
+/*fixed header and foot bar*/
+#header, #footer{
+		position:fixed;
+		height: auto;
+		display:block;
+		width: 100%;
+		z-index:9;
+		text-align:center;
+        opacity: 0.5;
+        background: #000;
+	}
+
+	#header{
+		top:0px;
+	}
+	#footer{
+		bottom:0px;
+	}
+/*there you go Rarity*/
 .ghost-button {
   display: inline-block;
   width: 200px;
@@ -701,6 +720,7 @@ num {
 
 </head>
 <body>
+<div id="header"><a href="//hoof.flatfact.com"><img src="//farm9.staticflickr.com/8631/16845031025_32f2005b17_o.png"></a></div>
    <!----------------------Facebook Plugin Script------------------------> 
     <script>
   window.fbAsyncInit = function() {
